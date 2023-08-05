@@ -23,8 +23,8 @@ export const config: Record<string, SearchEngine> = {
   },
   duckduckgo: {
     inputQuery: ["input[name='q']"],
-    sidebarContainerQuery: ['.results--sidebar.js-results-sidebar'],
-    appendContainerQuery: ['#links_wrapper'],
+    sidebarContainerQuery: ['.js-react-sidebar'],
+    appendContainerQuery: [''],
   },
   baidu: {
     inputQuery: ["input[name='wd']"],

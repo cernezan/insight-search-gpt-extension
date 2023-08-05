@@ -12,13 +12,13 @@ export interface PromotionResponse {
   label?: { text: string; url: string }
 }
 
-export async function fetchPromotion(): Promise<PromotionResponse | null> {
-  return fetch(`${API_HOST}/api/p`, {
-    headers: {
-      'x-version': getExtensionVersion(),
-    },
-  }).then((r) => r.json())
-}
+// export async function fetchPromotion(): Promise<PromotionResponse | null> {
+//   return fetch(`${API_HOST}/api/p`, {
+//     headers: {
+//       'x-version': getExtensionVersion(),
+//     },
+//   }).then((r) => r.json())
+// }
 
 export async function fetchExtensionConfigs(): Promise<{
   chatgpt_webapp_model_name: string
