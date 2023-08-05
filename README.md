@@ -1,6 +1,6 @@
-# ChatGPT for Google
+# Insight Search GPT Extension
 
-A browser extension to display ChatGPT response alongside Google (and other search engines) results.
+A browser extension to display ChatGPT response alongside search results.
 
 ## Supported Search Engines
 
