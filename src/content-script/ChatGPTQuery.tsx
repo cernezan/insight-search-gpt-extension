@@ -20,9 +20,10 @@ function ChatGPTQuery(props: Props) {
   const [answer, setAnswer] = useState<Answer | null>(null)
   const [error, setError] = useState('')
   const [retry, setRetry] = useState(0)
+  const [status, setStatus] = useState<QueryStatus>()
+
   const [done, setDone] = useState(false)
   const [showTip, setShowTip] = useState(false)
-  const [status, setStatus] = useState<QueryStatus>()
 
   useEffect(() => {
     props.onStatusChange?.(status)
