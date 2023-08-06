@@ -20,9 +20,13 @@ function ChatGPTCard(props: Props) {
     if (endsWithQuestionMark(props.question.trim())) {
       return <ChatGPTQuery question={props.question} onStatusChange={props.onStatusChange} />
     }
+    if (triggered) {
+      return <ChatGPTQuery question={props.question} onStatusChange={props.onStatusChange} />
+    }
     return (
-      <p className="icon-and-text">
-        <LightBulbIcon size="small" /> Trigger ChatGPT by appending a question mark after your query
+      <p className="icon-and-text cursor-pointer" onClick={() => setTriggered(true)}>
+        <LightBulbIcon size="small" /> Trigger ChatGPT by appending a question mark (?) after your
+        query or click
       </p>
     )
   }
